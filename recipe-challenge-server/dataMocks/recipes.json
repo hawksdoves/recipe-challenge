@@ -1,0 +1,33 @@
+{
+    "recipes": [
+        {
+            "id": "1",
+            "name": "Lemon Chicken",
+            "time": "30",
+            "ingredients": [
+                { "name": "Chicken" } ,
+                { "name": "Lemon" }
+            ]
+        }, 
+        {
+            "id": "2",
+            "name": "Beef Stroganoff",
+            "time": "30",
+            "ingredients": [
+                { "name": "Beef" },
+                { "name": "Mustard" },
+                { "name": "Mushrooms" }
+            ]
+        }, 
+        {
+            "id": "3",
+            "name": "Caesar Salad",
+            "time": "25",
+            "ingredients": [
+                { "name": "Lettuce" },
+                { "name": "Croutons" },
+                { "name": "Parmesan" }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "id": "3",
+    "name": "Caesar Salad",
+    "time": "25",
+    "ingredients": [
+        {
+            "name": "Lettuce",
+            "quantity": "1"
+        },
+        {
+            "name": "Croutons",
+            "quantity": "5"
+        },
+        {
+            "name": "Parmesan",
+            "quantity": "10",
+            "measure": "g"
+        }
+    ]
+}

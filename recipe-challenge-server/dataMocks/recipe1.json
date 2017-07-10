@@ -1,0 +1,20 @@
+{
+    "id": "1",
+    "name": "Lemon Chicken",
+    "time": "30",
+    "ingredients": [
+        {
+            "name": "Chicken",
+            "quantity": "4"
+        },
+        {
+            "name": "Lemon",
+            "quantity": "1"
+        },
+        {
+            "name": "Thyme",
+            "quantity": "1",
+            "measure": "tsp"
+        }
+    ]
+}

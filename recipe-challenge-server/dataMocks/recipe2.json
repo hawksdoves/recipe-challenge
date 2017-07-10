@@ -1,0 +1,20 @@
+{
+    "id": "2",
+    "name": "Beef Stroganoff",
+    "time": "30",
+    "ingredients": [
+        {
+            "name": "Beef",
+            "quantity": "4"
+        },
+        {
+            "name": "Mushrooms",
+            "quantity": "20"
+        },
+        {
+            "name": "Mustard",
+            "quantity": "2",
+            "measure": "tsp"
+        }
+    ]
+}
