@@ -11,12 +11,10 @@ function List(props) {
         <div>
             <Card.Group>
             {recipes.map(recipe => {
-                return (
-                    
-                            <Link to={`/recipe/${recipe.id}`} key={`Link-${recipe.id}`} className='card'>
-                                <Recipe recipe={recipe} key={recipe.id} />
-                            </Link>
-                 
+                return (    
+                    <Link to={`/recipe/${recipe.id}`} key={`Link-${recipe.id}`} className='card'>
+                        <Recipe recipe={recipe} key={recipe.id} />
+                    </Link>
                 )
             })}
             </Card.Group>
