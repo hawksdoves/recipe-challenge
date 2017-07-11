@@ -7,7 +7,7 @@
 ## recipe-challenge-server
 ### compile
 
-* `npm run build` - compiles app from es6 to es5
+* `npm run compile` - compiles app from es6 to es5
 
 ### Run in dev
 
@@ -19,7 +19,7 @@
 
 ### Test
 
-* `npm test` - runs tests with coverage
+* `npm test` - runs tests with coverage (ensure you have compiled first)
 
 ## recipe-challenge-client
 ### compile
@@ -32,7 +32,7 @@
 
 ### Test
 
-* `npm test` - runs tests with coverage
+* `npm test` - runs tests with coverage (ensure you have compiled first)
 
 # Approach
 
