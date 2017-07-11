@@ -13,10 +13,7 @@ class DetailedRecipe extends React.Component {
     componentDidMount() {
         const { id } = this.props.match.params;
         getRecipe(id)
-            .then(resp => {
-                console.log(resp)
-            this.setState({ recipe: resp.data })
-            })
+            .then(resp => this.setState({ recipe: resp.data }))
     }
 
     render() {

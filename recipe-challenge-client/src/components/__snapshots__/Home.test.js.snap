@@ -106,18 +106,82 @@ ShallowWrapper {
     <h1>
         Welcome to Recipes'R'Us 
     </h1>
-    <div>
-        Sorry, we currently have no recipes for you
-    </div>
+    <List
+        recipes={
+            Array [
+                Object {
+                  "id": "1",
+                  "ingredients": Array [
+                    Object {
+                      "name": "Chicken",
+                    },
+                    Object {
+                      "name": "Lemon",
+                    },
+                  ],
+                  "name": "Lemon Chicken",
+                  "time": "30",
+                },
+                Object {
+                  "id": "2",
+                  "ingredients": Array [
+                    Object {
+                      "name": "Beef",
+                    },
+                    Object {
+                      "name": "Mustard",
+                    },
+                    Object {
+                      "name": "Mushrooms",
+                    },
+                  ],
+                  "name": "Beef Stroganoff",
+                  "time": "30",
+                },
+              ]
+        }
+    />
 </div>,
   "nodes": Array [
     <div>
       <h1>
             Welcome to Recipes'R'Us 
       </h1>
-      <div>
-            Sorry, we currently have no recipes for you
-      </div>
+      <List
+            recipes={
+                  Array [
+                        Object {
+                          "id": "1",
+                          "ingredients": Array [
+                            Object {
+                              "name": "Chicken",
+                            },
+                            Object {
+                              "name": "Lemon",
+                            },
+                          ],
+                          "name": "Lemon Chicken",
+                          "time": "30",
+                        },
+                        Object {
+                          "id": "2",
+                          "ingredients": Array [
+                            Object {
+                              "name": "Beef",
+                            },
+                            Object {
+                              "name": "Mustard",
+                            },
+                            Object {
+                              "name": "Mushrooms",
+                            },
+                          ],
+                          "name": "Beef Stroganoff",
+                          "time": "30",
+                        },
+                      ]
+            }
+      />
 </div>,
   ],
   "options": Object {},
@@ -136,7 +200,37 @@ ShallowWrapper {
         "props": Object {},
         "refs": Object {},
         "state": Object {
-          "recipes": Array [],
+          "recipes": Array [
+            Object {
+              "id": "1",
+              "ingredients": Array [
+                Object {
+                  "name": "Chicken",
+                },
+                Object {
+                  "name": "Lemon",
+                },
+              ],
+              "name": "Lemon Chicken",
+              "time": "30",
+            },
+            Object {
+              "id": "2",
+              "ingredients": Array [
+                Object {
+                  "name": "Beef",
+                },
+                Object {
+                  "name": "Mustard",
+                },
+                Object {
+                  "name": "Mushrooms",
+                },
+              ],
+              "name": "Beef Stroganoff",
+              "time": "30",
+            },
+          ],
         },
         "updater": Object {
           "enqueueCallback": [Function],
@@ -160,18 +254,82 @@ ShallowWrapper {
           <h1>
                     Welcome to Recipes'R'Us 
           </h1>
-          <div>
-                    Sorry, we currently have no recipes for you
-          </div>
+          <List
+                    recipes={
+                              Array [
+                                        Object {
+                                          "id": "1",
+                                          "ingredients": Array [
+                                            Object {
+                                              "name": "Chicken",
+                                            },
+                                            Object {
+                                              "name": "Lemon",
+                                            },
+                                          ],
+                                          "name": "Lemon Chicken",
+                                          "time": "30",
+                                        },
+                                        Object {
+                                          "id": "2",
+                                          "ingredients": Array [
+                                            Object {
+                                              "name": "Beef",
+                                            },
+                                            Object {
+                                              "name": "Mustard",
+                                            },
+                                            Object {
+                                              "name": "Mushrooms",
+                                            },
+                                          ],
+                                          "name": "Beef Stroganoff",
+                                          "time": "30",
+                                        },
+                                      ]
+                    }
+          />
 </div>,
         "_debugID": 2,
         "_renderedOutput": <div>
           <h1>
                     Welcome to Recipes'R'Us 
           </h1>
-          <div>
-                    Sorry, we currently have no recipes for you
-          </div>
+          <List
+                    recipes={
+                              Array [
+                                        Object {
+                                          "id": "1",
+                                          "ingredients": Array [
+                                            Object {
+                                              "name": "Chicken",
+                                            },
+                                            Object {
+                                              "name": "Lemon",
+                                            },
+                                          ],
+                                          "name": "Lemon Chicken",
+                                          "time": "30",
+                                        },
+                                        Object {
+                                          "id": "2",
+                                          "ingredients": Array [
+                                            Object {
+                                              "name": "Beef",
+                                            },
+                                            Object {
+                                              "name": "Mustard",
+                                            },
+                                            Object {
+                                              "name": "Mushrooms",
+                                            },
+                                          ],
+                                          "name": "Beef Stroganoff",
+                                          "time": "30",
+                                        },
+                                      ]
+                    }
+          />
 </div>,
       },
       "_renderedNodeType": 0,
