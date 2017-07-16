@@ -106,7 +106,7 @@ ShallowWrapper {
     <h1>
         Welcome to Recipes'R'Us 
     </h1>
-    <List
+    <RecipeSearch
         recipes={
             Array [
                 Object {
@@ -147,7 +147,7 @@ ShallowWrapper {
       <h1>
             Welcome to Recipes'R'Us 
       </h1>
-      <List
+      <RecipeSearch
             recipes={
                   Array [
                         Object {
@@ -254,7 +254,7 @@ ShallowWrapper {
           <h1>
                     Welcome to Recipes'R'Us 
           </h1>
-          <List
+          <RecipeSearch
                     recipes={
                               Array [
                                         Object {
@@ -295,7 +295,7 @@ ShallowWrapper {
           <h1>
                     Welcome to Recipes'R'Us 
           </h1>
-          <List
+          <RecipeSearch
                     recipes={
                               Array [
                                         Object {

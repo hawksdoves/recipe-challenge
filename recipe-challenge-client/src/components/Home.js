@@ -1,7 +1,7 @@
 import React from 'react';
 
 import getRecipes from '../services/getRecipes';
-import List from './List';
+import RecipeSearch from './RecipeSearch';
 
 class Home extends React.Component {
 
@@ -20,7 +20,7 @@ class Home extends React.Component {
             <div>
                 <h1>Welcome to Recipes'R'Us </h1>
                 { this.state.recipes.length > 0 ?
-                    <List recipes={this.state.recipes} /> :
+                    <RecipeSearch recipes={this.state.recipes} /> :
                     <div>Sorry, we currently have no recipes for you</div>
                 }
             </div>
