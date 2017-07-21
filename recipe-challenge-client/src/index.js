@@ -9,7 +9,6 @@ import 'semantic-ui-css/semantic.min.css'
 import './index.css';
 import App from './App';
 import reducers from './reducers';
-import getAllRecipes from './actions/getRecipes';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
@@ -18,13 +17,10 @@ const store = createStore(
     composeEnhancers(applyMiddleware(thunk))  
 )
 
-store.dispatch(getAllRecipes());
-
 ReactDOM.render((
-<Provider store={store}>
-    <Router>
-        <App />
-    </Router>
-</Provider>), 
+    <Provider store={store}>
+        <Router>
+            <App />
+        </Router>
+    </Provider>), 
 document.getElementById('root'));
-

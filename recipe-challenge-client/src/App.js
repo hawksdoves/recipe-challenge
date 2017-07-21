@@ -1,20 +1,16 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
-import HomeContainer from './containers/Home';
-import DetailedRecipe from './components/DetailedRecipe';
-import RouteNotFound from './components/RouteNotFound';
+import { default as Home } from './containers/Home';
 
 function App(props) {
+
   return (
     <div className='App'>
-      <Switch>
-        <Route exact path="/recipes" component={HomeContainer} />
-        <Route exact path="/recipe/:id" component={DetailedRecipe} />
-        <Route path='*' component={RouteNotFound} />
-      </Switch>
+      <h1>Welcome to Recipes'R'Us </h1>
+      <Route path="/" component={Home} />
     </div>
-  )
+  );
 }
 
 export default App;

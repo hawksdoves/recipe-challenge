@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Ingredient(props) {
-    const { ingredient } = props
+    const { ingredient } = props;
 
     return (
         <div key={ingredient.name}>

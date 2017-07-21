@@ -9,7 +9,7 @@ jest.mock('axios', () => {
 
     return {
         get: mockGetRequest
-    }
+    };
 });
 
 import mockRequest from 'axios';

@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 
-import List from './List';
+import List from '../List';
 
 describe('List', () => {
     it('should render all the recipes correctly', () =>{
@@ -20,9 +20,19 @@ describe('List', () => {
                     quantity: '2'
                 }]
             }
-        ]
-        const wrapper = shallow(<List recipes={recipes} />);
+        ];
 
-        expect(wrapper).toMatchSnapshot()
+        const favourites = [];
+        const wrapper = shallow(<List recipes={recipes} favourites={favourites} />);
+
+        expect(wrapper).toMatchSnapshot();
     })
-});
+
+    it('should display message if there are no recipes', () =>{
+        const recipes = [];
+        const favourites = [];
+        const wrapper = shallow(<List recipes={recipes} favourites={favourites} />);
+
+        expect(wrapper).toMatchSnapshot();
+    })
+})

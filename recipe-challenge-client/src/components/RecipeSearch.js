@@ -1,34 +1,16 @@
 import React from 'react';
+import { Icon, Input } from 'semantic-ui-react';
 
-import List from './List';
+function RecipeSearch(props) {
+    const { searchRecipes } = props;
 
-class RecipeSearch extends React.Component {
-
-    constructor(props) {
-        super(props)
-        this.state = { recipeResults: props.recipes }
-        this.searchRecipes = this.searchRecipes.bind(this)
-    }
-
-    searchRecipes(event) {
-        const updatedResults = this.props.recipes.filter(recipe => {
-            return recipe.name.toLowerCase().search(
-                event.target.value.toLowerCase()) !== -1;
-            });
-        this.setState({ recipeResults: updatedResults});
-    }
-
-    render(props) {
-        return (
-            <div>
-                <input type="text" placeholder="Recipe Search" onChange={this.searchRecipes} />
-                { this.state.recipeResults.length > 0 ?
-                    <List recipes={this.state.recipeResults} /> :
-                    <div>Sorry, nothing matched your filter term</div>
-                }
-            </div>
-        )
-    }
+    return <Input 
+                className='recipeSearch' 
+                type="text" 
+                placeholder="Recipe Search..." 
+                onChange={searchRecipes} 
+                icon={<Icon name='search' inverted circular link />} 
+            />
 }
 
 export default RecipeSearch;

@@ -1,20 +1,29 @@
 import React from 'react';
+import { Route, Switch } from 'react-router-dom';
+import { Loader } from 'semantic-ui-react';
 
-import getRecipes from '../services/getRecipes';
-import RecipeSearch from './RecipeSearch';
+import DetailedRecipe from './DetailedRecipe';
+import Recipes from './Recipes';
+import RouteNotFound from './RouteNotFound';
 
-function Home(props) {
-    const { recipes } = props
+class Home extends React.Component {
 
-        return (
-            <div>
-                <h1>Welcome to Recipes'R'Us </h1>
-                { recipes.length > 0 ?
-                    <RecipeSearch recipes={props.recipes} /> :
-                    <div>Sorry, we currently have no recipes for you</div>
-                }
-            </div>
-        )
+    componentDidMount() {
+        this.props.getRecipes();
+    }
+
+    render() {
+        const { recipes, isFetchingRecipes, ...rest } = this.props;
+
+        return !isFetchingRecipes ? (
+            <Switch>
+                <Route exact path="/" render={(props) => (<Recipes {...rest} recipes={recipes} />)} />
+                <Route path="/recipe/:id" render={(props) => (<DetailedRecipe {...rest}  />)} />
+                <Route path='*' component={RouteNotFound} />
+            </Switch>
+        ) :
+            <Loader active inline='centered' />
+    }
 };
 
 export default Home;

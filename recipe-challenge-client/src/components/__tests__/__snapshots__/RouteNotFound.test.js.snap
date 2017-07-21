@@ -16,7 +16,7 @@ ShallowWrapper {
     </MessageHeader>
     <Link
         replace={false}
-        to="/recipes"
+        to="/"
     >
         CLICK HERE TO VIEW RECIPES
     </Link>
@@ -30,7 +30,7 @@ ShallowWrapper {
       </MessageHeader>
       <Link
             replace={false}
-            to="/recipes"
+            to="/"
       >
             CLICK HERE TO VIEW RECIPES
       </Link>
@@ -78,7 +78,7 @@ ShallowWrapper {
           </MessageHeader>
           <Link
                     replace={false}
-                    to="/recipes"
+                    to="/"
           >
                     CLICK HERE TO VIEW RECIPES
           </Link>
@@ -92,7 +92,7 @@ ShallowWrapper {
           </MessageHeader>
           <Link
                     replace={false}
-                    to="/recipes"
+                    to="/"
           >
                     CLICK HERE TO VIEW RECIPES
           </Link>

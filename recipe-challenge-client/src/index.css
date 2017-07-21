@@ -5,7 +5,30 @@ body {
   font-family: sans-serif;
 }
 
-.ui.card {
-  height: 150px;
+h1 {
+  padding: 20px;
 }
 
+.ui.card {
+  height: 170px;
+  margin: 0px 10px;
+}
+
+.ui.cards {
+  margin: 20px auto;
+  width: 90%;
+}
+
+.recipeSearch {
+  margin: 30px;
+}
+
+.detailedRecipe {
+  margin: 10px auto;
+  display: inline-block;
+}
+
+.recipe {
+  margin: 10px auto;
+  display: inline-block;
+}

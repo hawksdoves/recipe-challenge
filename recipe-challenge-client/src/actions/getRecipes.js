@@ -1,14 +1,24 @@
-import getRecipes from '../services/getRecipes';
+import { default as getAllRecipes } from '../services/getRecipes';
+import { GET_RECIPES_SUCCESS, GET_RECIPES_REQUEST } from '../constants/actionTypes';
 
 function getRecipesSuccess(recipes) {
     return {
-        type: 'GET_RECIPES_SUCCESS',
+        type: GET_RECIPES_SUCCESS,
         recipes
-    }
+    };
 }
-export default function getAllRecipes() {
+
+function getRecipesRequest() {
+    return {
+        type: GET_RECIPES_REQUEST,
+    };
+}
+export default function getRecipes() {
     return (dispatch) => {
-        getRecipes()
-        .then(resp => dispatch(getRecipesSuccess(resp.data.recipes)))
-    }
+        
+        dispatch(getRecipesRequest());
+
+        return getAllRecipes()
+            .then(resp => dispatch(getRecipesSuccess(resp.data.recipes)));
+    };
 }

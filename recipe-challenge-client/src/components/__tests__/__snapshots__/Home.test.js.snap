@@ -1,0 +1,335 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home should display loader when fetching recipes 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <Loader
+    active={true}
+    inline="centered"
+/>,
+  "nodes": Array [
+    <Loader
+      active={true}
+      inline="centered"
+/>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 0,
+      "_context": Object {},
+      "_currentElement": <Home
+        isFetchingRecipes={true}
+/>,
+      "_debugID": 3,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": Home {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {
+          "isFetchingRecipes": true,
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 2,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <Loader
+          active={true}
+          inline="centered"
+/>,
+        "_debugID": 4,
+        "_renderedOutput": <Loader
+          active={true}
+          inline="centered"
+/>,
+      },
+      "_renderedNodeType": 1,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <Home
+    isFetchingRecipes={true}
+/>,
+}
+`;
+
+exports[`Home should render all the recipes correctly 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <Switch>
+    <Route
+        exact={true}
+        path="/"
+        render={[Function]}
+    />
+    <Route
+        path="/recipe/:id"
+        render={[Function]}
+    />
+    <Route
+        component={[Function]}
+        path="*"
+    />
+</Switch>,
+  "nodes": Array [
+    <Switch>
+      <Route
+            exact={true}
+            path="/"
+            render={[Function]}
+      />
+      <Route
+            path="/recipe/:id"
+            render={[Function]}
+      />
+      <Route
+            component={[Function]}
+            path="*"
+      />
+</Switch>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 0,
+      "_context": Object {},
+      "_currentElement": <Home
+        recipes={
+                Array [
+                        Object {
+                          "id": "1",
+                          "ingredients": Array [
+                            Object {
+                              "name": "Chicken",
+                            },
+                            Object {
+                              "name": "Lemon",
+                            },
+                          ],
+                          "name": "Lemon Chicken",
+                          "time": "30",
+                        },
+                        Object {
+                          "id": "2",
+                          "ingredients": Array [
+                            Object {
+                              "name": "Beef",
+                            },
+                            Object {
+                              "name": "Mustard",
+                            },
+                            Object {
+                              "name": "Mushrooms",
+                            },
+                          ],
+                          "name": "Beef Stroganoff",
+                          "time": "30",
+                        },
+                      ]
+        }
+/>,
+      "_debugID": 1,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": Home {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {
+          "recipes": Array [
+            Object {
+              "id": "1",
+              "ingredients": Array [
+                Object {
+                  "name": "Chicken",
+                },
+                Object {
+                  "name": "Lemon",
+                },
+              ],
+              "name": "Lemon Chicken",
+              "time": "30",
+            },
+            Object {
+              "id": "2",
+              "ingredients": Array [
+                Object {
+                  "name": "Beef",
+                },
+                Object {
+                  "name": "Mustard",
+                },
+                Object {
+                  "name": "Mushrooms",
+                },
+              ],
+              "name": "Beef Stroganoff",
+              "time": "30",
+            },
+          ],
+        },
+        "refs": Object {},
+        "state": Object {
+          "recipes": Array [
+            Object {
+              "id": "1",
+              "ingredients": Array [
+                Object {
+                  "name": "Chicken",
+                },
+                Object {
+                  "name": "Lemon",
+                },
+              ],
+              "name": "Lemon Chicken",
+              "time": "30",
+            },
+            Object {
+              "id": "2",
+              "ingredients": Array [
+                Object {
+                  "name": "Beef",
+                },
+                Object {
+                  "name": "Mustard",
+                },
+                Object {
+                  "name": "Mushrooms",
+                },
+              ],
+              "name": "Beef Stroganoff",
+              "time": "30",
+            },
+          ],
+        },
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 1,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <Switch>
+          <Route
+                    exact={true}
+                    path="/"
+                    render={[Function]}
+          />
+          <Route
+                    path="/recipe/:id"
+                    render={[Function]}
+          />
+          <Route
+                    component={[Function]}
+                    path="*"
+          />
+</Switch>,
+        "_debugID": 2,
+        "_renderedOutput": <Switch>
+          <Route
+                    exact={true}
+                    path="/"
+                    render={[Function]}
+          />
+          <Route
+                    path="/recipe/:id"
+                    render={[Function]}
+          />
+          <Route
+                    component={[Function]}
+                    path="*"
+          />
+</Switch>,
+      },
+      "_renderedNodeType": 1,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <Home
+    recipes={
+        Array [
+            Object {
+              "id": "1",
+              "ingredients": Array [
+                Object {
+                  "name": "Chicken",
+                },
+                Object {
+                  "name": "Lemon",
+                },
+              ],
+              "name": "Lemon Chicken",
+              "time": "30",
+            },
+            Object {
+              "id": "2",
+              "ingredients": Array [
+                Object {
+                  "name": "Beef",
+                },
+                Object {
+                  "name": "Mustard",
+                },
+                Object {
+                  "name": "Mushrooms",
+                },
+              ],
+              "name": "Beef Stroganoff",
+              "time": "30",
+            },
+          ]
+    }
+/>,
+}
+`;

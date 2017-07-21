@@ -1,10 +1,8 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import { MemoryRouter } from 'react-router-dom';
+import { StaticRouter, Route } from 'react-router-dom';
 
-import List from './List';
-
-const API_URL = 'http://localhost:3001/api';
+import Recipes from '../Recipes';
 
 const mockResponse = {
     data: {
@@ -30,35 +28,45 @@ const mockResponse = {
             }
         ]
     }
-}
+};
 
 jest.mock('axios', () => {
     const mockGetRequest = jest.fn(() => Promise.resolve(mockResponse));
 
     return {
         get: mockGetRequest
-    }
+    };
 });
 
-import Home from './Home';
+import Home from '../Home';
 
 describe('Home', () => {
     
     it('should render all the recipes correctly', () => {
-        const wrapper = shallow(<Home />);
-        wrapper.setState({ recipes: mockResponse.data.recipes })
-        expect(wrapper).toMatchSnapshot()
+        const wrapper = shallow(<Home recipes={mockResponse.data.recipes} />);
+        wrapper.setState({ recipes: mockResponse.data.recipes });
+
+        expect(wrapper).toMatchSnapshot();
     })
 
-    it('should display error message if there are no recipes', () =>{
-        const wrapper = shallow(<Home />);
-        expect(wrapper).toMatchSnapshot()
+    it('should display loader when fetching recipes', () =>{
+        const wrapper = shallow(<Home isFetchingRecipes={true} />);
+
+        expect(wrapper).toMatchSnapshot();
     })
 
-    it('calls componentDidMount() lifecycle method', () => {
+    it('calls componentDidMount() lifecycle method which calls getRecipes', () => {
+        const mockGetRecipes = jest.fn();
         const componentDidMountSpy = jest.spyOn(Home.prototype, 'componentDidMount');
-        const wrapper = mount(<MemoryRouter><Home /></MemoryRouter>);
+        const wrapper = mount(
+            <StaticRouter location="/" context={{}}>
+                <Home recipes={mockResponse.data.recipes} getRecipes={mockGetRecipes} favourites={[]} />
+            </StaticRouter>
+        );
 
         expect(componentDidMountSpy).toHaveBeenCalled();
-    });
+        expect(wrapper.find(Home).props().getRecipes).toHaveBeenCalled();
+        expect(wrapper.find(Route).find(Recipes).length).toEqual(1);
+    })
+
 });
